@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+html {
+   padding: 0;
+   margin: 0;
+   user-select: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: auto;
+    background-color: #121213;
+}
+
+.App {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#dark {
+  background-color: black;
+}
+
+#light {
+  background-color: white;
+}
+
+.NavBar {
+  width: 100vw;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  background-color: #121213;
+  border-bottom: 1px solid rgb(255,255,255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.BurgerLine {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 0;
+  height: 3px;
+  width: 20px;
+  position: relative;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.Burger {
+   height: min-content;
+   width: 140px;
+   padding: 0;
+   margin: 0;
+   margin-left: 15px;
+   display: flex;
+   flex-direction: column;
+   user-select: none;
+}
+
+.Burger:hover {
+  cursor: pointer;
+}
+
+.NavBarTitle {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.OptionsImage{
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid white;
+}
+
+.Options {
+  width: 150px;
+  margin-right: 5px;
+}
+
+.GameContent {
+  height: calc(100vh - 65px);
+  padding: 0;
+  margin: 0;
+  margin-top: 65px;
+  min-width: 60vw;
+  max-width: 100vw;
+  width: min-content;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Game {
+  height: 75%;
+  width: 40%;
+}
+
+.Keyboard {
+  height: 25%;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Keyboard ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Keyboard ul li {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 58px;
+  max-width: 40px;
+  min-width: 20px;
+  width: 40px;
+  margin: 3px;
+  padding: auto;
+}
+
+.Keyboard ul li button {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.Keyboard ul li button:hover {
+  cursor: pointer;
+}
+
+#ThickButton {
+  max-width: 63px;
+  min-width: 20px;
+  width: 63px;
+}

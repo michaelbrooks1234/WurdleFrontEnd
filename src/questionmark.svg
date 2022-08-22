@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #231f20;
+        fill: #fff;
         font-family: Bahnschrift, Bahnschrift;
         font-size: 640.58px;
         font-variation-settings: 'wght' 400, 'wdth' 100;
@@ -11,7 +11,7 @@
 
       .cls-2 {
         fill: none;
-        stroke: #231f20;
+        stroke: #000;
         stroke-miterlimit: 10;
         stroke-width: 51px;
       }

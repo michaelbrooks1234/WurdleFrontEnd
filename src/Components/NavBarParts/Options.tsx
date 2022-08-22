@@ -1,11 +1,20 @@
 import React from 'react'
 
-function Options() {
+
+
+
+function Options(props: any) {
     return (
         <div className="Options">
-            <img className="OptionsImage"/>
-            <img className="OptionsImage"/>
-            <img className="OptionsImage"/>
+            <div className="OptionsImageHolder">
+                {props.Bar}
+            </div>
+            <div className="OptionsImageHolder">
+                {props.QuestionMark}
+            </div>
+            <div className="OptionsImageHolder">
+                {props.Gear}
+            </div>
         </div>
     )
 }

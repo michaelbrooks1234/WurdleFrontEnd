@@ -13,6 +13,7 @@ body {
     height: auto;
     width: auto;
     background-color: #121213;
+    --keybg: #818384;
 }
 
 .App {
@@ -87,12 +88,62 @@ body {
   width: 30px;
   margin-right: 5px;
   margin-left: 5px;
-  border: 1px solid white;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -5px;
+}
+
+.OptionsImageHolder {
+  margin: 5px;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.OptionsImageHolder:hover {
+  cursor: pointer;
 }
 
 .Options {
   width: 150px;
   margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.OptionsMenu {
+  position: fixed;
+  z-index: 12;
+  height: 60vh;
+  width: 30vw;
+  background-color: #000;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.OptionsText {
+  color: white;
+}
+
+.Blur {
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+
+#Hidden {
+  display: none;
 }
 
 .GameContent {
@@ -133,7 +184,6 @@ body {
 
 .Keyboard ul li {
   display: inline-block;
-  border: 1px solid white;
   border-radius: 4px;
   height: 58px;
   max-width: 40px;
@@ -153,7 +203,9 @@ body {
   justify-content: center;
   color: white;
   background: none;
+  background-color: #818384;
   border: none;
+  border-radius: 3px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 15px;

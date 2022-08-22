@@ -2,15 +2,15 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720.67 720.05">
   <defs>
     <style>
-      .cls-1 {
+      .cls-3 {
         fill: #fff;
-        stroke: #231f20;
+        stroke: #000;
         stroke-miterlimit: 10;
         stroke-width: 51px;
       }
     </style>
   </defs>
-  <rect class="cls-1" x="25.5" y="226.33" width="223.22" height="468.22"/>
-  <rect class="cls-1" x="248.72" y="25.5" width="223.22" height="669.05"/>
-  <rect class="cls-1" x="471.95" y="363.48" width="223.22" height="331.07"/>
+  <rect class="cls-3" x="25.5" y="226.33" width="223.22" height="468.22"/>
+  <rect class="cls-3" x="248.72" y="25.5" width="223.22" height="669.05"/>
+  <rect class="cls-3" x="471.95" y="363.48" width="223.22" height="331.07"/>
 </svg>

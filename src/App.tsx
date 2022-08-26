@@ -9,10 +9,20 @@ import { ReactComponent as QuestionMark } from './questionmark.svg'
 
 function App() {
 
+  const [visibility, setVisibility] = React.useState("Visible");
+
+  function changeVisibility(): void {
+    if(visibility == "Hidden"){
+      setVisibility("");
+    }else {
+      setVisibility("Hidden");
+    }
+  }
+  
   return(
     <div className="App">
-      <OptionsMenu/>
-      <NavBar Gear={<Gear className="OptionsImage"/>} Bar={<Bar className="OptionsImage"/>} QuestionMark={<QuestionMark className="OptionsImage"/>}/>
+      <OptionsMenu visibility={visibility} changeVisibility={changeVisibility}/>
+      <NavBar changeVisibility={changeVisibility} Gear={<Gear className="OptionsImage"/>} Bar={<Bar className="OptionsImage"/>} QuestionMark={<QuestionMark className="OptionsImage"/>}/>
       <GameContent/>
     </div>
   )

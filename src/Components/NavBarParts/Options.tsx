@@ -12,7 +12,7 @@ function Options(props: any) {
             <div className="OptionsImageHolder">
                 {props.QuestionMark}
             </div>
-            <div className="OptionsImageHolder">
+            <div className="OptionsImageHolder" onClick={props.changeVisibility}>
                 {props.Gear}
             </div>
         </div>

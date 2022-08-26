@@ -7,7 +7,7 @@ function NavBar(props: any) {
         <div className="NavBar">
             <Burger/>
             <h1 className="NavBarTitle">Wurdle</h1>
-            <Options Gear={props.Gear} Bar={props.Bar} QuestionMark={props.QuestionMark}/> 
+            <Options changeVisibility={props.changeVisibility} Gear={props.Gear} Bar={props.Bar} QuestionMark={props.QuestionMark}/> 
         </div>
     )
 }

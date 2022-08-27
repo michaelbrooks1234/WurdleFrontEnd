@@ -13,8 +13,8 @@ function OptionsMenu(props: any) {
                     <div className="LetterContainer">
                         <span className="LetterInput">0</span>
                         <div className="ButtonContainer">
-                            <button className="ButtonUp"></button>
-                            <button className="ButtonDown"></button>
+                            <img className="Button" id='ButtonUp' src={props.arrow} alt="up"/>
+                            <img className="Button" src={props.arrow} alt="down"/>
                         </div>
                     </div>
                 </div>

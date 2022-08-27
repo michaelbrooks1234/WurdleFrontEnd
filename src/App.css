@@ -249,23 +249,25 @@ body {
   user-select: none;
 }
 
-.ButtonUp {
-  border: none;
-  height: 8px;
-  width: 8px;
-  margin: 1px;
-  margin-top: 5px;
-  background: url("./arrow.png") repeat 0 0;
-  background-color: white;
+.Button {
+  height: 14px;
+  width: 14px;
+  transition: all 0.1s;
 }
 
-.ButtonDown {
-  border: none;
-  height: 8px;
-  width: 8px;
-  margin: 1px;
-  background-image: url("./arrow.png");
+#ButtonUp {
+  transform: rotate(180deg);
 }
+
+#ButtonUp:hover {
+  transform: rotate(180deg) scale(150%);
+}
+
+.Button:hover {
+  cursor: pointer;
+  transform: scale(150%);
+}
+
 
 .LetterContainer {
   display: flex;

@@ -1,14 +1,22 @@
 import React from 'react'
+import LetterSpace from './LetterSpace'
 
+function Game(props:any){
 
-function Game(){
+    let arr: any = [];
 
-    // let arr = [];
+    for(let i = 0; i < props.count; i++){
+        if(i != 0){
+            arr.push([]);
+        }
+        for(let j = 0; i < props.count; j++){
+           arr[i].push(<LetterSpace row={i} column={j}/>);
+        }
+    }
+
     
     return(
-        <div className="Game">
-
-        </div>
+        <div></div>
     )
 }
 

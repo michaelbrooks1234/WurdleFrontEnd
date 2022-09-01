@@ -11,6 +11,7 @@ import arrow from "./arrow.png"
 function App() {
 
   const [visibility, setVisibility] = React.useState("Visible");
+  const [count, setCount] = React.useState(6);
 
   function changeVisibility(): void {
     if(visibility === "Hidden"){
@@ -24,7 +25,7 @@ function App() {
     <div className="App">
       <OptionsMenu visibility={visibility} arrow={arrow} changeVisibility={changeVisibility}/>
       <NavBar changeVisibility={changeVisibility} Gear={<Gear className="OptionsImage"/>} Bar={<Bar className="OptionsImage"/>} QuestionMark={<QuestionMark className="OptionsImage"/>}/>
-      <GameContent/>
+      <GameContent setCount={setCount} count={count}/>
     </div>
   )
 }
